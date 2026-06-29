@@ -1,0 +1,17 @@
+node_modules
+dist
+.output
+.nitro
+.tanstack
+.vite
+
+# Logs
+*.log
+
+# Env
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store

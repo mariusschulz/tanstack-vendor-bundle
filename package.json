@@ -1,0 +1,32 @@
+{
+  "name": "tanstack-vendor-bundle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Minimal repro: TanStack Start client build does not honor manualChunks/codeSplitting (no vendor chunk emitted)",
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.9.0",
+      "onFail": "download"
+    }
+  },
+  "dependencies": {
+    "@tanstack/react-router": "1.170.16",
+    "@tanstack/react-start": "1.168.26",
+    "react": "19.2.7",
+    "react-dom": "19.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.3",
+    "typescript": "7.0.1-rc",
+    "vite": "8.1.0"
+  }
+}
